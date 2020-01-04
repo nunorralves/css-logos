@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+.logo {
+  display: flex;
+  width: 20em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 3em;
+}
+
+.brand {
+  display: flex;
+  width: 5.75em;
+}
+
+.circle {
+  width: 3em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.circle-n {
+  background: blue;
+  color: white;
+  animation: toLeft 2s forwards;
+}
+
+.circle-a {
+  background: rgba(173, 216, 230, 0.8);
+  color: white;
+  transform: translateX(-0.3em);
+  animation: toRight 2s forwards;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-0.3em);
+  line-height: 1.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.name {
+  font-size: 1.8em;
+  color: blue;
+  animation: fadeInName 2s forwards;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 0.85em;
+  color: darkblue;
+  animation: fadeInRole 2s forwards;
+  text-indent: 0.2em;
+  /* font-style: italic; */
+  text-transform: uppercase;
+}
+
+@keyframes toLeft {
+  from {
+    opacity: 0;
+    transform: translateX(2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-0.3em);
+  }
+}
+
+@keyframes fadeInName {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRole {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
